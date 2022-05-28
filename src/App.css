@@ -1,19 +1,316 @@
 .app{
   min-height: 100vh;
-  background: lightblue;
+  background: red;
+  
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.scroll{
+  display: flex;
+  flex-direction: column;
 }
 
-.Selection{
+.links a{
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+.backImg{
+  background: url('./imgs/pepper.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 40%;
+  min-height: 100%;
+  min-width: 1024px;
+  background-color: black;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  background-position: center;
+  
+}
+.item{
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgb(71, 71, 71);
+  margin: 15px;
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background: white;
-  width: 25vw;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  align-items: center;
+  min-width: 40%;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+.itemNoC{
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgb(71, 71, 71);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: white;
+  align-items: center;
+  flex-wrap: wrap;
+  block-size: auto;
+  width: 25%;
+}
+.catagoryNoC{
+  width: 20%;
+  block-size: auto;
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgb(71, 71, 71);
+  margin: auto;
+  background: white;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.img {
+  max-width: 50%;
+  height: auto;
+}
+.wrapper{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.catagory{
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgb(71, 71, 71);
+  margin: 20px;
+  background: white;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.Malatang{
+  font-size: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgb(71, 71, 71);
+  margin: 20px;
+  background: rgba(172,36,49,255);
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.buttonPlus{
+  display: inline-flex;
+  justify-content: center; /* center the content horizontally */
+  align-items: center; /* center the content vertically */
+  --padding-x: .5em;
+  font-size: 1em;
+  line-height: .5;
+  padding: 0.5em var(--padding-x);
+  border-width: 2px;
+  border-style: solid;
+}
+.buttonMinus{
+  display: inline-flex;
+  justify-content: center; /* center the content horizontally */
+  align-items: center; /* center the content vertically */
+  --padding-x: .63em;
+  font-size: 1em;
+  line-height: .5;
+  padding: 0.5em var(--padding-x);
+  border-width: 2px;
+  border-style: solid;
 }
 .space{
   margin: 10px;
+  display: inline-block;
 }
 .red{
   color:red;
   font-size: 50px;
+}
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.carousel {
+  width:400px;
+  height:360px;
+}
+.scrollT{
+  color: white;
+  text-decoration: underline;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+.nav-links a{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+.types{
+  background: white;
+  justify-content: center;
+  display: flex;
+  margin: 8px;
+}
+.delivery{
+  justify-content: center;
+}
+.redirect{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 10%;
+  font-family: "proxima-nova";
+}
+.GrubHub{
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px rgb(30, 30, 30);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #D92128;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  font-family: "proxima-nova";
+  margin: 8px 2px;
+  cursor: pointer;
+  padding: 24px;
+}
+.DoorDash{
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px rgb(30, 30, 30);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #D92128;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  font-family: "TT Norms";
+  margin: 8px 2px;
+  cursor: pointer;
+  padding: 24px;
+}
+.testing{
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px rgb(30, 30, 30);
+  border-radius: 10px;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  font-family: "proxima-nova";
+  font-weight: bold;
+  margin: 8px 2px;
+  cursor: pointer;
+  padding: 24px;
+  background-color: #D92128;
+}
+.togo{
+  background: url('./imgs/pepper.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 40%;
+  min-height: 100%;
+  min-width: 1024px;
+  background-color: black;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  background-position: center;
+}
+#myBtn { /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+.about{
+  background-color: white;
+}
+.pickup{
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: white;
+  align-items: center;
+  min-width: 40%;
+  width: fit-content;
+  flex-wrap: wrap;
+  padding: 30px;
+  
+}
+.deliver{
+  display: flex;
+  justify-content: center;
+}
+.about{
+  display: flex;
+  justify-content: center;
+}
+.info{
+  padding: 50px;
+  margin-right: 35px;
+}
+.hours{
+  padding: 50px;
+  font-weight: bold;
+}
+.hours li{
+  padding: 5px;
+  margin-left: 35px;
 }

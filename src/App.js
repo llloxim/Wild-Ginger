@@ -1,49 +1,45 @@
-import React, {useEffect, useState} from 'react';
-import { unstable_renderSubtreeIntoContainer } from 'react-dom';
-import Tweet from './tweet.js';
-import './App.css'
-import Recipe from "./Recipe"
-import Selection from "./Selection.js"
+import React from 'react';
+import {
+	BrowserRouter,
+	Routes,
+	Route
+  } from "react-router-dom";
+import './App.css';
+import {MenuProvider} from './MenuContext';
+import {CounterProvider} from './CounterProvider'
+import {OrderProvider} from './OrderProvider'
+import Home from './Home';
+import Mt from './Mt';
+import Nav from './Nav';
+import ToGo from './ToGo';
+import About from './socials/About';
+function App() {
+	return (
+		<MenuProvider>
 
-function App(){
-  const [users, setUsers] = useState([
-    {name: "e", message : 'hello'},
-    {name: "d", message : 'hello'},
-    {name: "f", message : 'hello'}
-  ]);
-  const [counter, setCounter] = useState(0);
-  useEffect(()=>{
-    console.log("run")
-  }, [counter]);
-
-  const [search, setSearch] = useState('');
-  const [query, setQuery] = useState('');
-
-  const getRecipes = async () => {
-    const response = await fetch()
-    const data = await response.json();
-    console.log(data);
-  }
-  const updateSearch = e =>{
-    setSearch(e.target.value)
-  }
-  const getSearch = e =>{
-    e.preventDefault();
-    setQuery(search);
-  }
-
-  return(
-    <div className = "app">
-      <form className = "searh form" onSubmit={getSearch}>
-        <input className = "search-bar" type ="text" value={search} onChange={updateSearch} />
-        <button className = "search-button" type= "submit">search</button>
-      </form>
-      <h1 onClick={()=> setCounter(counter+1)}>{counter}</h1>
-      <Selection name="First" price={5} />
-      <Selection name="Second" price={3} />
-      <Selection name="First" price={4} />
-    </div>
-  );
+				<OrderProvider>
+					<div className="app">
+					{/* <div className='center'>
+					<img src={require("./imgs/logo.png")} alt=""/>
+					<Rolling/>
+					</div>
+						<div className='backImg'>
+						<Catagory/>
+						<Malatang/>
+						</div> */}
+						<BrowserRouter>
+							<Nav/>
+							<Routes>
+								<Route path="/" element={<Home/>}/>
+								<Route path="/Malatang" element={<Mt/>}/>
+								<Route path="/ToGo" element={<ToGo/>}/>
+								<Route path="/About" element={<About/>}/>
+							</Routes>
+						</BrowserRouter>
+					</div>
+				</OrderProvider>
+		</MenuProvider>
+	);
 }
 
 export default App;

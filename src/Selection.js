@@ -1,24 +1,18 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 
-function Selection({name, price}) {
-    const [counter, setCounter] = useState(0);
-    return(
-        <div className='Selection'>
-            <h1 className='space'>{name}</h1>
-            <h1 className='space'>${price}</h1>
-            <h1 onClick={()=> {
-                if(counter > 0){
-                    setCounter(counter-1)
-                    }
-                }
-            } className='space'>-</h1>
-            <h1 className='space'>{counter}</h1>
-            <h1 onClick={()=> {
-                setCounter(counter+1)
-                } 
-            }className='space'>+</h1>
-        </div>
-    )
+function Selection(props) {
+	const { price, name, value, increment } = props;
+
+	return (
+		<div className="Selection">
+			<h1 className="space">{name}</h1>
+			<h1 className="space">${price}</h1>
+			<button onClick={() => props.increment()} className="space">
+				+
+			</button>
+			<h1>{value}</h1>
+		</div>
+	);
 }
 
-export default Selection
+export default Selection;

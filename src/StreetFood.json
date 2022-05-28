@@ -1,0 +1,40 @@
+{
+    "Street Food":[
+        {
+            "Rou Jia Mo":
+                {
+                    "Stewed Pork Burger": {
+                        "Name": "Stewed Pork Burger",
+                        "Price": 4.99
+                    },
+                    "Cumin Lamb Burguer":{
+                        "Name":"Cumin Lamb Burger",
+                        "Price": 4.99
+                    }
+                },
+            "Cold Noodles":
+                {
+                    "Liang Pi":{
+                        "Name": "Liang Pi",
+                        "Price": 9.00
+                    },
+                    "Stir-fried Liang-Pi":{
+                        "Name": "Stir-fried Liang-Pi",
+                        "Price": 9.00
+                    }
+                },
+            "Salad":
+            {
+                
+                    "Spicy Cucumber Salad":{
+                        "Name" : "Spicy Cumumber Salad",
+                        "Price": 6.0
+                    },
+                    "Tiger Salad":{
+                        "Name": "Tiger Salad",
+                        "Price": 8.00
+                    }
+                }
+        }
+    ]
+}

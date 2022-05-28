@@ -1,0 +1,157 @@
+{
+    "Combo":[
+        {
+            "Name": "Lamb Combo Malatang",
+            "Price": 12.00,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Fish Combo Malatang",
+            "Price": 9.00,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Beef Combo Malatang",
+            "Price": 9.00,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Vegi Combo Malatang",
+            "Price": 9.00,
+            "img": "./imgs/sticker.png"
+        }
+    ],
+    "Noodles":[
+        {
+            "Name": "Biang-Biang Hand-Pulled Noodles",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Ramen Noodles",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Udon",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Vermicelli",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        }
+    ],
+    "Meat":[
+        {
+            "Name": "Fish",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Lamb",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Beef",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        }
+    ],
+    "Other":[
+        {
+            "Name": "Rice Cake",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Tofu Puff",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Fish Tofu",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Crab Stick",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Fish Ball",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Tempura Fish Cake",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Luncheon Meat",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Beef Ball",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        }
+    ],
+    "Veggies":[
+        {
+            "Name": "Enoki Mushroom",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Black Fungus",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Lotus Root",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Seaweed",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Bean Curd Skin",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Tofu",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Crowndaisy",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Lettuce",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Chinese Cabbage",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        },
+        {
+            "Name": "Potato",
+            "Price": 0,
+            "img": "./imgs/sticker.png"
+        }
+    ]
+}
