@@ -6,7 +6,6 @@ import {
   } from "react-router-dom";
 import './App.css';
 import {MenuProvider} from './MenuContext';
-import {CounterProvider} from './CounterProvider'
 import {OrderProvider} from './OrderProvider'
 import Home from './Home';
 import Mt from './Mt';
@@ -16,7 +15,6 @@ import About from './socials/About';
 function App() {
 	return (
 		<MenuProvider>
-
 				<OrderProvider>
 					<div className="app">
 					{/* <div className='center'>

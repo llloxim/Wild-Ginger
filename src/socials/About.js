@@ -6,7 +6,7 @@ const About = () =>{
             <div className='info'>
                 <h1 className='location'>Location : 1239 Park St, Alameda, CA 94501 </h1>
                 <h1 className='location'>Phone Number :  510-263-8128 </h1>
-                <img src={require("../imgs/logo.png")} alt=""/>
+                <img className='map' src={require("../imgs/logo.png")} alt=""/>
             </div>
             <ul className='hours'>Hours Of Operation
             <li>Monday

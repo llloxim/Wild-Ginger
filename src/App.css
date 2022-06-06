@@ -1,10 +1,10 @@
+
 .app{
-  min-height: 100vh;
   background: red;
-  
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  overflow-x: hidden;
 }
 .scroll{
   display: flex;
@@ -39,49 +39,60 @@
   box-shadow: 0px 5px 20px rgb(71, 71, 71);
   margin: 15px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   background: white;
   align-items: center;
   min-width: 40%;
   width: fit-content;
   flex-wrap: wrap;
+  
 }
 .itemNoC{
   border-radius: 10px;
   box-shadow: 0px 5px 20px rgb(71, 71, 71);
   margin: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   background: white;
   align-items: center;
   flex-wrap: wrap;
   block-size: auto;
-  width: 25%;
+  
 }
-.catagoryNoC{
-  width: 20%;
-  block-size: auto;
-  text-align: center;
-  justify-content: center;
-  display: inline-block;
-  border-radius: 10px;
-  box-shadow: 0px 5px 10px rgb(71, 71, 71);
-  margin: auto;
-  background: white;
+.homefont{
+  font-size: 80%;
+  font-weight: bold;
+}
+.mtext{
+  font-weight: bold;
+  padding: 5px;
+}
+.description{
+  font-size: 30px;
   display: flex;
-  justify-content:center;
+  flex-direction: column;
   align-items:center;
+  padding: 5px;
 }
 .img {
-  max-width: 50%;
-  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 200px;
+}
+.imgH{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 300px;
 }
 .wrapper{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  
 }
 .catagory{
   border-radius: 10px;
@@ -92,8 +103,16 @@
   justify-content:center;
   align-items:center;
 }
+.catagoryNoC{
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgb(71, 71, 71);
+  margin: 20px;
+  background: white;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
 .Malatang{
-  font-size: 40px;
   border-radius: 10px;
   box-shadow: 0px 5px 10px rgb(71, 71, 71);
   margin: 20px;
@@ -136,7 +155,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+
 }
 .carousel {
   width:400px;
@@ -161,21 +180,197 @@ nav{
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+.nav-links li{
+  list-style: none;
+}
+.nav-links a{
   text-transform: uppercase;
   font-weight: bold;
   font-size: 30px;
   color: white;
   text-decoration: none;
 }
-.nav-links a{
+.burger{
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: gray; /* Set a background color */
+  padding: 5px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  display: none;
+  cursor: pointer;
+}
+.burger div{
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: white;
+}
+@media screen and (max-width: 1024px) {
+  .nav-links{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  body {
+    margin: 0;
+    width: 100vw; 
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  .nav-links{
+    position: fixed;
+    top: 60px; /* Place the button at the bottom of the page */
+    z-index: 99;
+    right: 0px;
+    height: 78vh;
+    background-color: #D92128;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li{
+    opacity: 0;
+  }
+  nav{
+    position: relative;
+  }
+  .burger{
+    position: fixed;
+    top: 15px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99;
+    display: block;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-active li{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+  }
+  .nav-active a{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  .carousel .thumb img {
+    width: 100% !important;
+    height: 100% !important;
+    
+  }
+  .carousel-control-next{
+    justify-content:left
+  }
+  .carousel .slide img {
+    max-height: 200px;  /* change this to whatever you want */
+    width: auto;
+  }
+  .center{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .scroll{
+    display: flex;
+    flex-direction: column;
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0;
+    text-align: center;
+  }
+  .scrollT{
+    font-size: 20px;
+    background-color: #555;
+  }
+  .links a{
+    color: rgb(226, 226, 226);
+    background-color: #D92128;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 3px;
+  }
+  .links{
+    padding-left: 0;
+  }
+  .catagory{
+    width: 100vw;
+    font-size: large;
+    font-weight: bold;
+    margin: 0;
+  }
+  .catagoryNoC{
+    width: 100vw;
+    font-size: large;
+    font-weight: bold;
+    margin: 0;
+  }
+  .class{
+    width: 100vw;
+  }
+  .classM{
+    width: 100vw;
+  }
+  .togo {
+    height: auto;
+  }
+  .togo-links{
+    width: 100vw;
+    text-align: center;
+    padding-left: 0;
+  }
+  .about{
+    width: 100vw;
+    text-align: center;
+    flex-direction: column;
+  }
+  .map{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 500px;
+  }
+  .info{
+    width: 100vw;
+  }
+  .hours{
+    width: 100vh;
+  }
+  #myBtn { /* Hidden by default */
+  display: none;
+}
+}
+.nav-active{
+  position: fixed;
+  top: 60px; /* Place the button at the bottom of the page */
+  z-index: 99;
+  right: 0px;
+  height: 78vh;
+  background-color: #D92128;
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  text-decoration: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  transition: transform 0.5s ease-in;
+  transform: translateX(0%);
 }
 .types{
   background: white;
@@ -183,8 +378,8 @@ nav{
   display: flex;
   margin: 8px;
 }
-.delivery{
-  justify-content: center;
+.deliver{
+  flex-wrap: wrap;
 }
 .redirect{
   color: black;
@@ -193,6 +388,7 @@ nav{
   font-size: 30px;
   margin-left: 10%;
   font-family: "proxima-nova";
+  text-align: center;
 }
 .GrubHub{
   border-radius: 10px;
@@ -254,11 +450,18 @@ nav{
 	
   /* Set up proportionate scaling */
   width: 100%;
-  height: auto;
+  height: 100%;
 	
   /* Set up positioning */
-  position: fixed;
+
   background-position: center;
+  text-align: center;
+}
+.togo-links{
+  padding-left: 0;
+}
+.filler{
+  height: 10vh;
 }
 #myBtn { /* Hidden by default */
   position: fixed; /* Fixed/sticky position */

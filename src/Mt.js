@@ -17,7 +17,6 @@ const Mt = () =>{
         <div className='backImg'>
         <div className='center'>
           <MalatangSlide/>
-          <img src={require("./imgs/logo.png")} alt=""/>
 				  <Rolling items={MalatangJS}/>
         </div>
 				  <Malatang/>

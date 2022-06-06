@@ -5,10 +5,12 @@ const Item = ({name, price, counterID})=>{
 
     return(
         <div className="item">
-            <h1 >{counterID}</h1>
-			<h1 >{name} :  ${price}</h1>
-			<h1 >${price}</h1>
-            <img src= {require('./imgs/sticker.png')} alt ={require('./imgs/sticker.png')}/>
+            <div className='description'>
+                <h1 className='homefont'>{counterID}</h1>
+			    <h1 className='homefont'>{name}</h1>
+                <h1 className='homefont'>${price}</h1>
+            </div>
+            <img className="imgH" src= {require('./imgs/sticker.png')} alt ={require('./imgs/sticker.png')}/>
             {/*<h1 className="space">
                 <button className="buttonMinus" onClick={() => {
                 let copy = [...counter]

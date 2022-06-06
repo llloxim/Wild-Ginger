@@ -7,7 +7,7 @@ const ToGo = () =>{
                     <h1 className='types'>Pick Up</h1>
                     <div className='deliver'>
                             <div className='pickup'>
-                                <div className='redirect'>Call in to order :  (510) 263-8128</div>
+                                <div className='redirect'><div>Call in to order</div> (510) 263-8128</div>
                             </div>
                             <div className='pickup'>
                                 <h1>Order Onine For Pickup</h1>
@@ -27,6 +27,7 @@ const ToGo = () =>{
                             </div>
                     </div>
             </ul>
+            <div className='filler'></div>
         </div>
     );
 }

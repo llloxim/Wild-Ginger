@@ -18,7 +18,6 @@ const Home = () =>{
 
         	<div className='center'>
 				<SlideHome/>
-				<img src={require("./imgs/logo.png")} alt=""/>
 				<Rolling items={useContext(MenuContext)}/>
 			</div>
 				<Catagory/>
