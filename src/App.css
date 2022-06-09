@@ -207,11 +207,6 @@ nav{
   background-color: white;
 }
 @media screen and (max-width: 1024px) {
-  .nav-links{
-    width: 100%;
-  }
-}
-@media screen and (max-width: 768px) {
   html {
     position: fixed;
     height: 100%;
@@ -331,6 +326,7 @@ nav{
   }
   .togo {
     height: auto;
+    
   }
   .togo-links{
     width: 100vw;
@@ -376,7 +372,6 @@ nav{
   background: white;
   justify-content: center;
   display: flex;
-  margin: 8px;
 }
 .deliver{
   flex-wrap: wrap;
