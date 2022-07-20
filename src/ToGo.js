@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Footer from './socials/Footer';
 const ToGo = () =>{
     return(
         <div className='togo'>
@@ -28,6 +28,7 @@ const ToGo = () =>{
                     </div>
             </ul>
             <div className='filler'></div>
+            <Footer/>
         </div>
     );
 }

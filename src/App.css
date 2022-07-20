@@ -1,6 +1,6 @@
 
 .app{
-  background: red;
+  background: rgb(100,25,31);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -9,29 +9,35 @@
 .scroll{
   display: flex;
   flex-direction: column;
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0;
 }
+.marker{
+  width:auto;
+  height: 60px;
+}
+.scrollT{
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
 
+}
+.links li{
+  margin: 5px;
+}
 .links a{
   color: rgb(226, 226, 226);
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
+  background-color:#D92128;
+  padding: 3px;
 }
+
 .backImg{
-  background: url('./imgs/pepper.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 40%;
-  min-height: 100%;
-  min-width: 1024px;
   background-color: black;
-	
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-	
-  /* Set up positioning */
-  background-position: center;
   
 }
 .item{
@@ -41,25 +47,32 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background: white;
+  background: rgba(172,36,49,255);
   align-items: center;
   min-width: 40%;
   width: fit-content;
   flex-wrap: wrap;
   
 }
+.item h1{
+  color: white;
+}
 .itemNoC{
   border-radius: 10px;
   box-shadow: 0px 5px 20px rgb(71, 71, 71);
-  margin: 20px;
+  margin: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background: white;
+  background: rgba(172,36,49,255);
   align-items: center;
+  min-width: 40%;
+  width: fit-content;
   flex-wrap: wrap;
-  block-size: auto;
   
+}
+.item h1{
+  color: white;
 }
 .homefont{
   font-size: 80%;
@@ -68,6 +81,7 @@
 .mtext{
   font-weight: bold;
   padding: 5px;
+  color: white;
 }
 .description{
   font-size: 30px;
@@ -81,12 +95,14 @@
   border-radius: 4px;
   padding: 5px;
   width: 200px;
+  background-color: white;
 }
 .imgH{
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
   width: 300px;
+  background-color: white;
 }
 .wrapper{
   display: flex;
@@ -148,7 +164,7 @@
   display: inline-block;
 }
 .red{
-  color:red;
+  color:rgba(172,36,49,255);
   font-size: 50px;
 }
 .center{
@@ -161,10 +177,6 @@
   width:400px;
   height:360px;
 }
-.scrollT{
-  color: white;
-  text-decoration: underline;
-}
 .logo{
   display: flex;
   align-items: center;
@@ -176,9 +188,26 @@ nav{
   align-items: center;
 
 }
+.nav-active{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.nav-active li{
+  list-style: none;
+}
+.nav-active a{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
 .nav-links{
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
 }
 .nav-links li{
@@ -211,6 +240,11 @@ nav{
     position: fixed;
     height: 100%;
     overflow: hidden;
+  }
+  .backImg{
+    background: none;
+    background-color: black;
+    
   }
   
   body {
@@ -251,6 +285,19 @@ nav{
     transform: rotate(0deg);
     transition: transform 0.5s ease-in;
   }
+  .nav-active{
+    position: fixed;
+    top: 60px; /* Place the button at the bottom of the page */
+    z-index: 99;
+    right: 0px;
+    height: 78vh;
+    background-color: #D92128;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+  }
   .nav-active li{
     font-weight: bold;
     font-size: 20px;
@@ -263,6 +310,7 @@ nav{
     color: white;
     text-decoration: none;
   }
+  
   .carousel .thumb img {
     width: 100% !important;
     height: 100% !important;
@@ -294,6 +342,10 @@ nav{
   .scrollT{
     font-size: 20px;
     background-color: #555;
+    font-weight: bold;
+  }
+  .links{
+    padding-left: 0;
   }
   .links a{
     color: rgb(226, 226, 226);
@@ -301,10 +353,7 @@ nav{
     text-decoration: none;
     font-weight: bold;
     font-size: 15px;
-    padding: 3px;
-  }
-  .links{
-    padding-left: 0;
+
   }
   .catagory{
     width: 100vw;
@@ -337,6 +386,7 @@ nav{
     width: 100vw;
     text-align: center;
     flex-direction: column;
+    align-items: stretch;
   }
   .map{
     border: 1px solid #ddd;
@@ -353,20 +403,7 @@ nav{
   #myBtn { /* Hidden by default */
   display: none;
 }
-}
-.nav-active{
-  position: fixed;
-  top: 60px; /* Place the button at the bottom of the page */
-  z-index: 99;
-  right: 0px;
-  height: 78vh;
-  background-color: #D92128;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 50%;
-  transition: transform 0.5s ease-in;
-  transform: translateX(0%);
+
 }
 .types{
   background: white;
@@ -375,6 +412,7 @@ nav{
 }
 .deliver{
   flex-wrap: wrap;
+  color:white;
 }
 .redirect{
   color: black;
@@ -384,6 +422,7 @@ nav{
   margin-left: 10%;
   font-family: "proxima-nova";
   text-align: center;
+  color:white;
 }
 .GrubHub{
   border-radius: 10px;
@@ -435,22 +474,7 @@ nav{
   background-color: #D92128;
 }
 .togo{
-  background: url('./imgs/pepper.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 40%;
-  min-height: 100%;
-  min-width: 1024px;
   background-color: black;
-	
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: 100%;
-	
-  /* Set up positioning */
-
-  background-position: center;
-  text-align: center;
 }
 .togo-links{
   padding-left: 0;
@@ -461,11 +485,11 @@ nav{
 #myBtn { /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
+  right: 25px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
+  background-color: #D92128; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -476,20 +500,18 @@ nav{
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
-.about{
-  background-color: white;
-}
 .pickup{
   margin: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: white;
+  background: rgba(172,36,49,255);
   align-items: center;
   min-width: 40%;
   width: fit-content;
   flex-wrap: wrap;
   padding: 30px;
+  
   
 }
 .deliver{
@@ -499,6 +521,11 @@ nav{
 .about{
   display: flex;
   justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: white;
 }
 .info{
   padding: 50px;
@@ -507,6 +534,7 @@ nav{
 .hours{
   padding: 50px;
   font-weight: bold;
+  font-size: large;
 }
 .hours li{
   padding: 5px;

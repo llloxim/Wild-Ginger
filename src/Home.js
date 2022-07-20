@@ -4,6 +4,7 @@ import Rolling from './scroll';
 import Catagory from './Catagory';
 import {MenuContext} from './MenuContext';
 import SlideHome from './slides/homeSlide';
+import Footer from './socials/Footer';
 
 const Home = () =>{
 	const scrollToTop = () =>{
@@ -23,6 +24,7 @@ const Home = () =>{
 				<Catagory/>
 			</div>
 			<button onClick={scrollToTop} id="myBtn" title="Go to top">Top</button>
+			<Footer/>
         </div>
 
     );

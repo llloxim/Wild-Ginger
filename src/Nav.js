@@ -15,18 +15,18 @@ const Nav = () =>{
     return(
         <nav>
             <ul className={style}>
-
+                <img className='marker' src={require("./imgs/logoNobg.png")} alt=""/>
                 <li>
-                    <Link to={`/`} className="Toolbar">Home</Link>
+                    <Link onClick={handleToggle} to={`/`} className="Toolbar">Home</Link>
                 </li>
                 <li>
-                    <Link to={`/Malatang`} className="Toolbar">Create Your Own Malatang</Link>
+                    <Link onClick={handleToggle} to={`/Malatang`} className="Toolbar">Create Your Own Malatang</Link>
                 </li>
                 <li>
-                    <Link to={`/ToGo`} className="Toolbar">ToGo</Link>
+                    <Link onClick={handleToggle} to={`/ToGo`} className="Toolbar">ToGo</Link>
                 </li>
                 <li>
-                    <Link to={`/About`} className="About">About</Link>
+                    <Link onClick={handleToggle} to={`/About`} className="About">About</Link>
                 </li>
             </ul>
             <div className='burger' 

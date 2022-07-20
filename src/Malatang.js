@@ -1,7 +1,7 @@
 import React from 'react';
 import ItemNoC from './itemNoC';
 import MalatangJS from './Malatang.json'
-
+import Footer from './socials/Footer';
 const Malatang = ()=>{
     const itemList = [];
     const keys = Object.keys(MalatangJS);
@@ -20,6 +20,7 @@ const Malatang = ()=>{
         <div className="classM">
             <h1 className="Malatang"> Malatang </h1>
             {itemList}
+            <Footer/>
 		</div>
     );
 
