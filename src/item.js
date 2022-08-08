@@ -1,8 +1,8 @@
 import React from 'react';
+import Carousel from 'react-bootstrap/Carousel'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-const Item = ({name, price, counterID})=>{
-
+const Item = ({name, price, counterID, imgLink})=>{
     return(
         <div className="item">
             <div className='description'>
@@ -10,7 +10,23 @@ const Item = ({name, price, counterID})=>{
 			    <h1 className='homefont'>{name}</h1>
                 <h1 className='homefont'>${price}</h1>
             </div>
-            <img className="imgH" src= {require('./imgs/sticker.png')} alt ={require('./imgs/sticker.png')}/>
+            <Carousel className='imgH' >
+            <Carousel.Item interval={3000}>
+              <img
+                className="d-block w-100"
+                src={imgLink}
+                alt="./imgs/sticker.png"
+              />
+            </Carousel.Item>
+            <Carousel.Item interval={3000}>
+              <img
+                className="d-block w-100"
+                src="./imgs/sticker.png"
+                alt="./imgs/sticker.png"
+              />
+            </Carousel.Item>
+            </Carousel>
+            {/* <img className="imgH" src= {require('./imgs/sticker.png')} alt ={require('./imgs/sticker.png')}/> */}
             {/*<h1 className="space">
                 <button className="buttonMinus" onClick={() => {
                 let copy = [...counter]

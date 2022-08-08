@@ -14,7 +14,7 @@ const Catagory = ()=>{
         var wrapper = []
         for(let j = 0; j < parts.length; j++){
             const food = parts[j];
-            wrapper.push(<Item name={food.Name} price={food.Price} key={food.Tag} counterID={food.Tag}/>)
+            wrapper.push(<Item name={food.Name} price={food.Price} key={food.Tag} counterID={food.Tag} imgLink={food.img}/>)
         }
         itemList.push(<div className='wrapper'>{wrapper}</div>)
     }

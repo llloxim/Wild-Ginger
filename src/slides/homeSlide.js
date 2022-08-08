@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const SlideHome = ()=>{
     return (
         <div>
-          <Carousel>
+          <Carousel style={{width: '400px',
+  height:'360px'}}>
             <Carousel.Item interval={1500}>
               <img
                 className="d-block w-100"

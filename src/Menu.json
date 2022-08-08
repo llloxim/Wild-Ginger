@@ -4,55 +4,55 @@
             "Tag": "H1",
             "Name": "Cumin Lamb In Sauce",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/sticker.png"
         },
         {
             "Tag": "H2S",
             "Name": "Cumin Lamb In Soup",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/sticker.png"
         },
         {
             "Tag": "H2",
             "Name": "Pork 'Zha Jiang' In Sauce",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/H2.JPG"
         },
         {
             "Tag": "H3",
             "Name": "Oil Seared In Sauce",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/sticker.png"
         },
         {
             "Tag": "H4",
             "Name": "Stewed Pork In Soup",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/sticker.png"
         },
         {
             "Tag": "H4S",
             "Name": "Tingly Beef In Sauce",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/sticker.png"
         },
         {
             "Tag": "H5",
             "Name": "Tingly Beef In Soup",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/H5.JPG"
         },
         {
             "Tag": "H5S",
             "Name": "Curry Beef In Sauce",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/sticker.png"
         },
         {
             "Tag": "H6",
             "Name": "Mixed Vegi in Sauce",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/H6_1.jpg"
         }
     ],
     "Noodles": [
@@ -60,37 +60,37 @@
             "Tag": "T1",
             "Name": "Pork 'Zha Jiang' Noodle",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/sticker.png"
         },
         {
             "Tag": "T2",
             "Name": "Dandan Noodle",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/sticker.png"
         },
         {
             "Tag": "T3",
             "Name": "Beef Noodles In Soup",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/sticker.png"
         },
         {
             "Tag": "T4",
             "Name": "Cumin Lamb Noodle In Soup",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/sticker.png"
         },
         {
             "Tag": "T5",
             "Name": "Spicy & Sour Vermicelli",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/sticker.png"
         },
         {
             "Tag": "T6",
             "Name": "Beef Vermichelli",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/sticker.png"
         }
     ],
     "Dumplings":[
@@ -98,49 +98,51 @@
             "Tag": "D1",
             "Name": "Pork Dumplings In Sauce",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/sticker.png"
         },
         {
             "Tag": "D1S",
             "Name": "Pork Dumplings In Soup",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/sticker.png"
         },
         {
             "Tag": "D2",
             "Name": "Lamb Dumplings In Sauce",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/sticker.png"
         },
         {
             "Tag": "D2S",
             "Name": "Lamb Dumplings In Soup",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/sticker.png"
         },
         {
             "Tag": "D3",
             "Name": "Spinich Dumplings In Sauce",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/sticker.png"
         },
         {
             "Tag": "D3S",
             "Name": "Spinisch Dumplings In Soup",
             "Price": 12.99,
-            "img": ""
+            "img": "./imgs/sticker.png"
         }
     ],
     "Rou Jia Mo":[
         {
             "Tag": "A1",
             "Name": "Stewed Pork Burger",
-            "Price": 4.99
+            "Price": 4.99,
+            "img": "./imgs/sticker.png"
         },
         {
             "Tag": "A2",
             "Name":"Cumin Lamb Burger",
-            "Price": 4.99
+            "Price": 4.99,
+            "img": "./imgs/sticker.png"
         }
 
     ],
@@ -149,12 +151,14 @@
                     {
                         "Tag": "L1",
                         "Name": "Liang Pi",
-                        "Price": 9.00
+                        "Price": 9.00,
+                        "img": "./imgs/sticker.png"
                     },
                     {
                         "Tag": "L2",
                         "Name": "Stir-fried Liang-Pi",
-                        "Price": 9.00
+                        "Price": 9.00,
+                        "img": "./imgs/sticker.png"
                     }
                 ],
     "Salad":[
@@ -162,12 +166,14 @@
                     {
                         "Tag": "S1",
                         "Name" : "Spicy Cumumber Salad",
-                        "Price": 6.0
+                        "Price": 6.0,
+                        "img": "./imgs/sticker.png"
                     },
                     {
                         "Tag": "S2",
                         "Name": "Tiger Salad",
-                        "Price": 8.00
+                        "Price": 8.00,
+                        "img": "./imgs/sticker.png"
                     }
             ]
 

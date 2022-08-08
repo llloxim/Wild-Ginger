@@ -1,4 +1,6 @@
-
+html, body {
+  overflow: auto;
+}
 .app{
   background: rgb(100,25,31);
   background-position: center;
@@ -173,10 +175,12 @@
   justify-content: center;
 
 }
-.carousel {
-  width:400px;
-  height:360px;
+
+.w-100 {
+  width: 100% !important;
+  height: 300px;
 }
+
 .logo{
   display: flex;
   align-items: center;
@@ -539,4 +543,9 @@ nav{
 .hours li{
   padding: 5px;
   margin-left: 35px;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
 }
